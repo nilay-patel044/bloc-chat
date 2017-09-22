@@ -5,12 +5,11 @@
 
 
 
-    console.log($firebaseArray);
-    console.log(fireRef);
-    console.log(rooms);
-    console.log(Room);
+
     return {
-      all: rooms
+        all: rooms,
+        create: function(newRoom) {
+            rooms.$add(newRoom); }
     };
   }
 

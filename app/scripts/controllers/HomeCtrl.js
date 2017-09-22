@@ -1,10 +1,6 @@
 (function() {
 		function HomeCtrl(Room) {
-			console.log("Home Controller Loaded");
-			this.chatRooms = Room.all;
-			console.log(this.chatRooms);
-
-
+			this.rooms = Room.all;
 		}
 
 		angular

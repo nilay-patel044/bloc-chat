@@ -1,8 +1,14 @@
-<section ng-controller="HomeCtrl as home">
+<section>
     <div class="navbar">
         <h1>Bloc Chat</h1>
 
-        <h4 ng-repeat="room in home.chatRooms">{{ room.$value }}</h4>
+        <div ng-controller='ModalCtrl as modal'>
+        <button type="button" class="btn btn-default" ng-click="modal.open()">New Room</button>
+        </div>
+
+        <h4 ng-repeat="room in home.rooms">
+        {{ room.$value }}
+        </h4>
 
     </div>
 </section>
