@@ -6,9 +6,28 @@
         <button type="button" class="btn btn-default" ng-click="modal.open()">New Room</button>
         </div>
 
-        <h4 ng-repeat="room in home.rooms">
-        {{ room.$value }}
+        <h4 class="room" ng-repeat="room in home.rooms">
+        <p ng-click="home.changeRoom(room)">{{ room.$value }} </p>
         </h4>
 
     </div>
+</section>
+
+<section>
+  <div class="container">
+         <h2>{{ currentRoom.$value }}</h2>
+         <table class="table">
+             <tr ng-repeat="message in messages track by $index" class="row" ng-class="{oddRow: $odd}">
+                 <td class="username">
+                     {{ message.username }}:
+                     <br/>
+                     {{ message.content }}
+                 </td>
+                 <td class="sentAt">{{ message.sentAt }}</td>
+             </tr>
+
+         </table>
+
+  </div>
+
 </section>
