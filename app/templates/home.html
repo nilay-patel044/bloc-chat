@@ -7,7 +7,7 @@
         </div>
 
         <h4 class="room" ng-repeat="room in home.rooms">
-        <p ng-click="home.changeRoom(room)">{{ room.$value }} </p>
+        <p ng-click="home.changeRoom(room)">{{ room.name }} </p>
         </h4>
 
     </div>
@@ -17,7 +17,7 @@
   <div class="container">
          <h2>{{ currentRoom.$value }}</h2>
          <table class="table">
-             <tr ng-repeat="message in messages track by $index" class="row" ng-class="{oddRow: $odd}">
+             <tr ng-repeat="message in home.messages track by $index" class="row" ng-class="{oddRow: $odd}">
                  <td class="username">
                      {{ message.username }}:
                      <br/>

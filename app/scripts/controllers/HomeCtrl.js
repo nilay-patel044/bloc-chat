@@ -1,27 +1,15 @@
 (function() {
-		function HomeCtrl(Room, Message, $scope) {
-			rooms = Room.all;
 
-			rooms.$loaded().then(function(rooms) {
-
-					var key1 = '-KuevDQHyYJ4qRmSL9A7';
-					room = rooms.$getRecord(key1);
-
-					$scope.currentRoom = room;
-					$scope.messages = Message.getByRoomId($scope.currentRoom.$id);
-
-			});
-
-			this.rooms = rooms;
-
-			this.changeRoom = function(room) {
-					$scope.currentRoom = room;
-					$scope.messages = Message.getByRoomId($scope.currentRoom.$id);
-			};
+		function HomeCtrl(Room, Message) {
+				this.rooms = Room.all;
+				this.changeRoom = function(room) {
+						this.currentRoom = room;
+						this.messages = Message.getByRoomId(room.$id);
+				};
 
 		}
 
 		angular
 				.module('blocChat')
-				.controller('HomeCtrl', ['Room', 'Message', '$scope', HomeCtrl]);
+				.controller('HomeCtrl', ['Room', 'Message', HomeCtrl]);
 })();

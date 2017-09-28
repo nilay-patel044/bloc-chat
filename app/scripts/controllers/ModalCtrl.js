@@ -1,4 +1,4 @@
-(function() {
+(function () {
     function ModalCtrl($uibModal, $log, Room) {
 
         this.open = function() {

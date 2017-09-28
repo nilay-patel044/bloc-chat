@@ -1,3 +1,4 @@
+
 (function() {
     function config($locationProvider, $stateProvider) {
         $locationProvider

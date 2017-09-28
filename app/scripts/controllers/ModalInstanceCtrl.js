@@ -2,7 +2,7 @@
     function ModalInstanceCtrl($uibModalInstance) {
         this.ok = function() {
             this.room = {name: ''};
-            console.log(this.name);
+
             $uibModalInstance.close(this.name);
         };
 
