@@ -4,7 +4,6 @@
             this.room = {name: ''};
             $uibModalInstance.close(this.name);
         };
-
         this.cancel = function() {
             $uibModalInstance.dismiss('cancel');
         };

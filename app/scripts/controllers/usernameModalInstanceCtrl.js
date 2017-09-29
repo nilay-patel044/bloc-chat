@@ -2,7 +2,7 @@
     function usernameModalInstanceCtrl($uibModalInstance) {
         this.ok = function (isValid) {
             if (isValid) {
-                $uibModalInstance.close(this.username);
+                $uibModalInstance.close(username);
             }
         };
     }
