@@ -1,7 +1,7 @@
 <section>
     <div class="navbar">
         <h1>Bloc Chat</h1>
-        
+
         <div ng-controller='ModalCtrl as modal'>
         <button type="button" class="btn btn-default" ng-click="modal.open()">New Room</button>
         </div>
@@ -19,7 +19,7 @@
              <tr ng-repeat="message in home.messages track by $index" class="row" ng-class="{oddRow: $odd}">
                  <td class="username">
                      {{ message.username }}:
-                     <br/>
+                     <br>
                      {{ message.content }}
                  </td>
                  <td class="sentAt">{{ message.sentAt }}</td>

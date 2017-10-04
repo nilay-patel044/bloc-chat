@@ -1,9 +1,13 @@
 (function() {
     function usernameModalInstanceCtrl($uibModalInstance) {
-        this.ok = function (isValid) {
+
+        this.ok = function(isValid) {
+
             if (isValid) {
+              // save the cookie
                 $uibModalInstance.close(username);
             }
+
         };
     }
 

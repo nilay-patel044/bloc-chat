@@ -7,7 +7,7 @@
         all: rooms,
         create: function(newRoom) {
             rooms.$add({name: newRoom});
-        }
+        },
     };
   }
 

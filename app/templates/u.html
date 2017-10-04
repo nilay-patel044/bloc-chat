@@ -1,0 +1,16 @@
+<div>
+    <div class = "modal-header">
+        <h2 class = "modal-title">Set A Username</h2>
+    </div>
+    <div class = "modal-body">
+        <br>This name will appear when you send messages.</br>
+        <form name = "Username" ng-submit = "cookieThis.isValid(currentUser)">
+            <div class = "input-group animated">
+              <input type = "text" class = "form-control finderBar" ng-model = "currentUser" name = "currentUser" ng-minlength = "1" required autofocus>
+            </div>
+        </form>
+    </div>
+    <div class = "modal-footer">
+        <button class="btn btn-primary" type="button" ng-click= "cookieThis.isValid(currentUser)">Set Username</button>
+    </div>
+</div>

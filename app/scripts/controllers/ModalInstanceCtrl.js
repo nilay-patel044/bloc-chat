@@ -7,7 +7,7 @@
         this.cancel = function() {
             $uibModalInstance.dismiss('cancel');
         };
-    }
+    };
 
     angular
         .module('blocChat')
