@@ -7,7 +7,8 @@
 						this.currentRoom = room;
 						this.messages = Message.getByRoomId(room.$id);
 				};
-
+				this.send = Message.send;
+				
 
 
 		}

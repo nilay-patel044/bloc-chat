@@ -77,3 +77,10 @@ body {
   display: table;
   content: " ";
 }
+
+.input-bar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+}
