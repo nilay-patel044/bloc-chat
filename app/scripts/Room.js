@@ -8,9 +8,6 @@
         return $firebaseArray(messages.orderByChild("roomId").equalTo(roomId));
     };
 
-    // var create = function(newRoom) {
-    //     rooms.$add({name: newRoom});
-    // };
     return {
         all: rooms,
         create: function(newRoom) {
@@ -18,7 +15,6 @@
         },
         rooms,
         getMessages
-        // create()
     };
   }
 
