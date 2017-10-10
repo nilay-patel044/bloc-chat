@@ -13,6 +13,7 @@
 
 						message.roomId = this.currentRoom.$id;
 						Message.send(message);
+						//
 
 				};
 
