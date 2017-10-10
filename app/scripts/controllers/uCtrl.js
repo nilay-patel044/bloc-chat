@@ -2,7 +2,7 @@
     function uCtrl($cookies, $uibModalInstance) {
       // Save the user provided username into a cookie.
       this.saveUser = function(username) {
-          $cookies.put('blocChatCurrentUser', 'username');
+          $cookies.put('blocChatCurrentUser', username);
           console.log('I am saving the cookie value as: ' + username);
 
       };

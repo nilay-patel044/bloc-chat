@@ -11,6 +11,50 @@
         </form>
     </div>
     <div class = "modal-footer">
-        <button class="btn btn-primary" type="button" ng-click= "cookieThis.isValid(currentUser)">Set Username</button>
+        <button class="btn btn-primary" type="button" ng-click= "cookieThis.isValid(currentUser)">Login with Google</button>
     </div>
 </div>
+<!-- <script>
+  var myFirebase = new Firebase('https://FIREBASE-PROJECTID.firebaseio.com/');
+  var textInput = document.querySelector('#text');
+  var postButton = document.querySelector('#post');
+
+  // ADD THESE 4 LINES
+  var username = null;
+  var loginButton = document.querySelector('#login');
+  postButton.style.display = "none";
+  textInput.style.display = "none";
+
+
+  postButton.addEventListener("click", function() {
+    // ADD THIS LINE
+    var msgUser = username;
+
+    var msgText = textInput.value;
+    myFirebase.push({username:msgUser, text:msgText});
+    textInput.value = "";
+  });
+
+  loginButton.addEventListener("click", function() {
+  myFirebase.authWithOAuthPopup("google", function(error, authData) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log(authData);
+    }
+  }, {remember: "sessionOnly"}); // will end authentication on page close/reload
+});
+
+myFirebase.onAuth(function (authData) {
+ if (authData) {
+     username = authData.google.displayName;
+     loginButton.textContent = "Logged in as " + username;
+     loginButton.disabled = true;
+     postButton.style.display = "block";
+     textInput.style.display = "block";
+
+     // Start listening for data, remove previous calls to this method
+     startListening();
+ }
+});
+</script> -->

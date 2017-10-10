@@ -52,6 +52,11 @@ body {
 
 .username {
     width: 80%;
+    /*padding: 0.5em 1em;
+    background-color: #DD4B39;
+    border: none;
+    color: #FFF;
+    cursor: pointer;*/
 }
 
 .sentAt {
@@ -135,3 +140,4 @@ body {
 .modal-dialog .modal-content .modal-footer {
   color: red;
   text-align: center;
+}

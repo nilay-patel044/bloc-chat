@@ -12,19 +12,7 @@
           });
 
         }
-        //
-        // var getCurrentUser = function() {
-        //     return $cookies.get('blocChatCurrentUser');
-        // };
-        //
-        // var saveUserName = function (username) {
-        //     $cookies.put('blocChatCurrentUser', username);
-        // };
-        //
-        // return {
-        //     saveUserName: saveUserName,
-        //     getCurrentUser: getCurrentUser
-        // };
+
   }
 
   angular
